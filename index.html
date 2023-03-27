@@ -12,8 +12,8 @@
         <h1 class="text-3xl font-medium">First project</h1>
         <div>
           <button
-            id="mobile-open-button"
-            class="text-3xl sm:hidden focus:outline-none"
+            id="hamburgar-button"
+            class="text-3xl md:hidden focus:outline-none cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,12 +30,28 @@
               />
             </svg>
           </button>
-          <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+          <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
             <a href="#" class="hover:opacity-90">our rocket</a>
             <a href="#" class="hover:opacity-90">testimonials</a>
             <a href="#" class="hover:opacity-90">contact</a>
           </nav>
         </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="absolute top-0 bg-black w-full text-5xl flex-col justify-items-center origin-top animate-open-menu hidden"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav
+          aria-label="mobile"
+          class="flex flex-col min-h-screen items-center py-8"
+        >
+          <a href="#" class="w-full py-6 text-center">Home</a>
+          <a href="#" class="w-full py-6 text-center">rockets</a>
+          <a href="#" class="w-full py-6 text-center">testimonials</a>
+          <a href="#" class="w-full py-6 text-center">contect</a>
+          <a href="#" class="w-full py-6 text-center">Legal</a>
+        </nav>
       </div>
     </header>
     <main class="max-w-4xl mx-auto">
